@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icon.png" width="96" height="96" alt="SwiftQuery Logo" />
+  <img src="icon.png" width="96" height="96" alt="SwiftQuery Logo" style="border-radius: 20%;" />
 </p>
 
 <h1 align="center">SwiftQuery</h1>
