@@ -1,4 +1,18 @@
-# SwiftQuery – Select to Search Chrome Extension
+<p align="center">
+  <img src="icon.png" width="96" height="96" alt="SwiftQuery Logo" />
+</p>
+
+<h1 align="center">SwiftQuery</h1>
+
+<p align="center">
+  <b>Select to Search Chrome Extension</b>
+</p>
+
+<p align="center">
+  <img src="screenshot.png" width="750" alt="SwiftQuery Action Preview" />
+</p>
+
+---
 
 `SwiftQuery` is a modern, lightweight, and visual-first Manifest V3 Chrome Extension. It allows you to select or highlight text on any webpage and instantly query it against popular AI search engines like **ChatGPT**, **Gemini**, and **Claude** with a beautiful, custom-designed, floating toolbar.
 
@@ -30,6 +44,7 @@ swift-query/
 ├── popup.css         # Options panel themes (Light default) & styles
 ├── popup.js          # Options panel reactivity & live preview simulation
 ├── icon.png          # Extension icon (128x128)
+├── screenshot.png    # Extension action preview image
 └── test.html         # Local test workbench environment
 ```
 
