@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwiftQuery – Extension Test Workbench</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #fafbfc;
+    }
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border: 1px solid #e1e4e8;
+    }
+    h1 {
+      color: #4f46e5;
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+    .subtitle {
+      color: #586069;
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 25px;
+      border-bottom: 1px solid #eaecef;
+      padding-bottom: 15px;
+    }
+    h2 {
+      font-size: 18px;
+      color: #0f172a;
+      margin-top: 25px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    .test-box {
+      background-color: #f6f8fa;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #4f46e5;
+      font-size: 15px;
+      margin: 20px 0;
+    }
+    .highlight-target {
+      font-weight: 500;
+      color: #09090b;
+      cursor: pointer;
+    }
+    .instructions {
+      background-color: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+    .instructions h3 {
+      margin-top: 0;
+      color: #1e3a8a;
+    }
+    .instructions ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .instructions li {
+      margin-bottom: 10px;
+      color: #1e40af;
+    }
+    code {
+      background-color: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 13.5px;
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SwiftQuery Workbench</h1>
+    <p class="subtitle">Use this local environment to load, test, and verify your Chrome extension.</p>
+
+    <div class="instructions">
+      <h3>How to Load and Test the Extension:</h3>
+      <ol>
+        <li>Open your Google Chrome browser and navigate to <code>chrome://extensions/</code>.</li>
+        <li>In the top-right corner, toggle the **"Developer mode"** switch to **ON**.</li>
+        <li>In the top-left corner, click **"Load unpacked"**.</li>
+        <li>Select the extension directory: <br><code>C:\Users\prati\dev\swift-query</code></li>
+        <li>Once loaded, refresh this page (<code>F5</code>).</li>
+        <li>Try highlighting or selecting text in the paragraph below to trigger the popup!</li>
+      </ol>
+    </div>
+
+    <h2>Test Paragraphs</h2>
+    <p>Double-click words or select longer sentences to trigger the SwiftQuery floating toolbar.</p>
+    
+    <div class="test-box">
+      <p class="highlight-target">Quantum computing is a rapidly-emerging technology that harnesses the laws of quantum mechanics to solve problems too complex for classical computers. These machines are built on qubits, which represent information in a fundamentally different way than standard computer bits.</p>
+      
+      <p class="highlight-target">In artificial intelligence, large language models (LLMs) are deep learning algorithms that can recognize, summarize, translate, predict and generate text and other content based on knowledge gained from massive datasets.</p>
+    </div>
+
+    <h2>Features to Verify:</h2>
+    <ul>
+      <li><strong>Theme Toggle</strong>: Click the extension icon in the Chrome toolbar. Toggle the theme between Light/Dark/System. The settings window and floating popup will update instantly.</li>
+      <li><strong>Trigger Modes</strong>:
+        <ul>
+          <li><em>Instant</em>: Highlights show the engine list immediately.</li>
+          <li><em>Search Circle</em>: Highlights show a small search icon bubble. Clicking it reveals the engine choices.</li>
+          <li><em>Key Shortcut</em>: Selection only triggers if you hold <code>Ctrl</code>, <code>Alt</code>, or <code>Shift</code> while selecting.</li>
+        </ul>
+      </li>
+      <li><strong>Engine Filter</strong>: Turn off Claude or Gemini in settings. They should immediately disappear from the floating popup.</li>
+      <li><strong>Automated Injections</strong>: Click "ChatGPT", "Gemini", or "Claude" inside the popup. A new tab will open, the text will inject into their prompt field, and if "Auto-Submit" is enabled, the search will initiate automatically!</li>
+    </ul>
+  </div>
+</body>
+</html>
